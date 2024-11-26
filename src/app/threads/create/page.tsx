@@ -79,7 +79,7 @@ export default function Page() {
           <CardHeader>
             <CardTitle>Create new threads</CardTitle>
             <CardDescription>
-              Let the whole world knows what's on your mind
+              {"Let the whole world knows what's on your mind"}
             </CardDescription>
           </CardHeader>
           <CardContent>

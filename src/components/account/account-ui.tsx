@@ -255,7 +255,7 @@ export function AccountTransactions({ address }: { address: PublicKey }) {
               </TableHeader>
               <TableBody>
                 {items?.map((item) => (
-                  <TableRow>
+                  <TableRow key={item.signature}>
                     <TableCell>
                       <a href={getExplorerUrl(`tx/${item.signature}`)}>
                         {ellipsify(item.signature)}

@@ -152,7 +152,10 @@ export default function Page() {
                   }
                 };
                 return (
-                  <div className="rounded-md shadow-lg border border-gray-200 p-4 flex">
+                  <div
+                    key={comment.address.toString()}
+                    className="rounded-md shadow-lg border border-gray-200 p-4 flex"
+                  >
                     <div className="flex flex-col">
                       <h1 className="font-bold">
                         {comment.commentAuthor.toString()}
